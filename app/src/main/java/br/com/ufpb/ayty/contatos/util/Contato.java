@@ -5,24 +5,16 @@ import com.j256.ormlite.table.DatabaseTable;
 
 import java.io.Serializable;
 
-@DatabaseTable(tableName = "Contato")
-public class Contato implements Serializable{
+public class Contato{
 
-    @DatabaseField(generatedId = true)
+    
     private long id;
-    @DatabaseField
     private int idImage;
-    @DatabaseField
     private String nome;
-    @DatabaseField
     private String sobrenome;
-    @DatabaseField
     private String telefone;
-    @DatabaseField
     private String tipoTelefone;
-    @DatabaseField
     private String email;
-    @DatabaseField
     private String tipoEmail;
 
     public Contato(){}
